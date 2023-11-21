@@ -44,8 +44,8 @@
 				  </div>
 				  <div class="col-sm-2 vertical-divider">
 				  	<h3 class="project_overview">Target Users</h3>
-				  	<p>For FAST: General users (with and without accounts), PMS users with tuners</p>
-				  	<p>For AVOD: General, non-PMS users (with and without accounts)</p>
+				  	<p>Fintech developers/developers looking to leverage a banking API</p>
+				  	<p>Fintech upper management looking to leverage a banking API</p>
 				  </div>
 				  <div class="project_overview_deliverables col-md">
 				  	<h3 class="project_overview">Deliverables Created</h3>
@@ -96,7 +96,7 @@
 								<div class="process_step">
 									<span>User Research</span>
 								</div>
-								<p>Qualitative usability studies to walk through and evaluate current state</p>
+								<p>Qualitative user interviews to walk through and evaluate current experiences with banking APIs and needs/want with banking APIS</p>
 							</li>
 							<li>
 								<div class="process_step">
@@ -106,9 +106,9 @@
 							</li>
 							<li>
 								<div class="process_step">
-									<span>Brainstorming & Backlog</span>
+									<span>Wireframing /Blueprinting</span>
 								</div>
-								<p>Working with stakeholders to brainstorm new features to improve apps</p>
+								<p>Iterative wireframing to establish flows and functionality across platforms</p>
 							</li>
 						</ul>
 					</div>
@@ -121,86 +121,48 @@
 				<div class="overview row">
 				  <div class="project_overview_deliverables col-md">
 				  	<h3 class="project_overview">Requirements Gathering</h3>
-				  	<p>The beginning of both of these project started as a pretty ambiguous "hey, let's fix FAST/AVOD" from my product managers so the first step was to sit down and figure out the who, what, when, where, and why. I set up a meeting with my key stakeholders to figure out the problem(s) they were wanting to solve, metrics they wanted to target, any target users they had in mind, and a timeline.</p>
-				  	<ul>
-					  	<li>For FAST: My product managers wanted to tackle two main problems: the lack of consistency of the FAST experience across all supported platforms (the platforms of focus ended up being iOS, Android, watch.plex (web), app.plex (web), Fire TV, Roku, and LG/Lightning. The process was going to be start with identifying what's actually happening in FAST, if it aligns with best practices in the industry, figure out how to bring it to a consistent state across platforms that users would be happy with, and then start figuring out areas of improvement for future iterations of FAST.</li>
-					  	<li>For AVOD: The same problems as above were identified, but for a user group, we focused a lot less on PMS users and more on general users in order to improve the experience to focus more on retention and registration.</li>
-					</ul>
+				  	<p>For this project, I was approached by one of my enterprise product teams with the desire of wanting to build an API portal for others to leverage. This would be the first externally facing product the enterprise team would have ever implemented. The target users initially were developers implementing products/applications that would require leveraging a banking API (for example, if a product wanted to leverage certain transactional functionality, they would be able to go to this portal in order to call the API and build it into their application). As far as other requirements went, it was fairly open-ended with just the general idea of an API portal.</p>
 				  </div>
 				</div>
 				<div class="horizontal-divider"></div>
 				<div class="overview row">
 				  <div class="project_overview_deliverables col-md">
 				  	<h3 class="project_overview">Non-User Research</h3>
-				  	<p>After the initial meeting with stakeholders, I went onto non-user/market research. For this round of research, I focused on trying to find any existing documentation/research/wireframes/mockups that may be able to help target inconsistencies, walking through the application on target platforms to understand and map out flows/inconsistencies, and look at competitors to understand what best practices appear to be across streaming services. This resulted in the following:</p>
-				  	<ul>
-				  		<li>Metadata Analysis and Usability Analysis: To start tackling the consistency issues across platforms, I started off by conducting a metadata analysis for FAST/AVOD. The metadata analysis consisted of walking through each major page within the FAST/AVOD flows, wireframing them out completely (paying extra attention to the formatting and display of metadata), and then walking through to see the best way to standardize formatting across platforms. I also was able to use these wireframes to map out feature/usability inconsistencies and recommendations around them. Part of the flows for TV FAST apps is shown to the right.</li>
-				  		<li>Competitive Analysis: While looking through competitors, I conducted a few analyses centered around the following: metadata formatting across FAST/AVOD, general structure/flow of FAST/AVOD, and general page organization. For these analyses, I maintained a list of 11 competitors (5 direct, 6 indirect) for AVOD and a list of between 10-15 competitors for FAST (this varied based on users and functionality being considered). Direct competitors were streaming services that were free ad-supported services, indirect competitors were paid streaming services.</li>
-				  	</ul>
+				  	<p>As the project was fairly ambiguous, my first step was to look through competitor portals to see what was generally involved with the design and usability of a banking API portal. I targetted several different portals and was able to establish a general structure most of them followed as well as what each of them offered in terms of information/functionality. As I moved through each competitor, it did bring up a question we hadn't considered before which was if we wanted to put up some kind of registration gate. For some competitors, they utilized a registration gate to hide all of their API documentation, while others didn't and just left the information open to the public.</p>
+				  	<p>While going through competitor portals, I was having discussions with my developers around what they had been looking at as reference and discovered that we did have a pre-existing API portal that we had never pushed to the public. With access to that portal, I did my own heuristic analysis to see where usability could be improved as well as worked towards comparing our pre-exisiting portal to the competitors analyzed previously.</p>
 				  </div>
 				  <div class="project_overview_deliverables col-md">
-				  	<img class="nonusergraphic" src='images/nonusergraphic.png'>
+				  	<img class="nonuserdev" src='images/informed.png'>
 				  </div>
 				</div>
 				<div class="horizontal-divider"></div>
 				<div class="overview row">
 					<div class="project_overview_deliverables col-md">
-						<img class="userresearch" src='images/userresearch.png'>
+						<img class="userresearchicon" src='images/userresearchicon.png'>
 					</div>
 				  <div class="project_overview_deliverables col-md">
-				  	<h3 class="project_overview">User Research</h3>
-				  	<p>With the information collected from the non-user research, I wrote up a test plan for usability research across FAST/AVOD platforms.</p>
+				  	<h3 class="project_overview">User Research, Synthesis, & Recommendations</h3>
+				  	<p>Initially, there were no plans to interview users as the original timeline was much tighter than what it was adjusted to being. User interviews were introduced once we discovered we had more time as the API was being written (and because I bugged my product team to let me as I wanted to gather more information on functionality and previous experiences before continuing with a design).</p>
 				  	<ul>
-					  	<li>For the FAST study: The target users were initially focused around non-PMS (personal media server) users that watched at least 1-2 hours of live TV on a weekly basis, not specifically on Plex, but in general. Mobile, web, and TV platforms were targetted for this study. Users were asked to walk through the way they would typically use FAST, describing anything they liked/disliked/etc and then were asked questions around their experience, their watching habits, etc at the end to understand user behavior and content consumption. The study initially had over 80 participants, with about 40-50 usable studies used for research analysis as the study was unmoderated through UserTesting.com.</li>
-					  	<li>For the AVOD study: The target users were focused around non-PMS (personal media server) users that watched at least 1-2 hours of live TV on a weekly basis, not specifically on Plex, but in general. Mobile, web, and TV platforms were targetted for this study. Users were asked to walk through the way they would typically use AVOD, describing anything they liked/disliked/etc and then were asked questions around their experience, their watching habits, etc at the end to understand user behavior and content consumption. The study initially had over 110 participants, with a little over 60 usable studies used for research analysis as the study was unmoderated through UserTesting.com.</li>
+					  	<li>The first round of user interviews were conducted virtually in-person with 10 different CEOs/CTOS/engineering managers from different companies that were partnered with Fifth Third. They were recruited via the product team after explaining the concept we were planning on designing out. Interviews were 60 minutes sessions focused around previous experiences, expectations for an API portal, components they liked/disliked from portals they've used/their devs have used, what they were hoping for with this new portal, etc.</li>
+					  	<li>The second round of user interviews were also conducted virtually in-person with 10 different software engineers who had experience actually implementing banking APIs in products they had either currently or previously worked on. Similar to the first round of interviews, these users were 60 minutes sessions focused around previous experiences, expectations for an API portal, components they liked/disliked from portals they've used/their devs have used, what they were hoping for with this new portal, etc, though with some more technically oriented questions that would be more relevant to them.</li>
 					</ul>
+					<p>From these interviews, I was able to synthesize my results and present my findings to my product and engineering teams, providing what I recommended as the direction we go in with the portal. We all came to a consensus on the direction and moved forward to the next steps.</p>
 				  </div>
 				</div>
 				<div class="horizontal-divider"></div>
 				<div class="overview row">
 				  <div class="project_overview_deliverables col-md">
-				  	<h3 class="project_overview">Recommendations and Brainstorming</h3>
-				  	<p>With all the research conducted, I put together an synthesis of my findings, also including in a JTBD persona for each study as requested by my product team. After presenting the synthesis to my product team as well as various other stakeholders, I was able to put together a brainstorming workshop to use with my stakeholders to generate new feature ideas for FAST and AVOD. From the brainstorming workshops, I took the most popular ideas and put them into a prioritization matrix and eventually a UX strategy/research/design backlog for future iterations of each flow. Below are snippets from the AVOD synthesis, brainstorming workshop, and prioritization matrix.</p>
+				  	<h3 class="project_overview">Wireframing /Blueprinting</h3>
+				  	<p>With enough insights, I started off by creating a low fidelity version of the screens for the application as well as a site map of those screens. With those screens designed, I then created flows for each phase we had decided on for the portal, adding to the site map to show what gets added where during each phase. The site map also acted as the information architecture for the layout of the API portal.</p>
+				  	<p>Because of a shift in priorities for myself as well as key engineering resources, there were no further design iterations for this project. I ended up delivering a fully fleshed out release plan with three phases, wireframes, site maps, style guides, branding resources, etc supplied for each phase to my developers with the short time left I had to dedicate to the project before moving on. I also made sure they knew they could always message me with design questions as the portal got implemented, I just couldn't be a dedicated resource anymore as other projects had higher priority.</p>
 				  </div>
 				</div>
-				<ul id="container" class="deliverable_align item-list">
-					<li class="research item web key">
-						<div class="image" tabindex="0">
-							<img src="images/research1.png"  alt="Research icon" />
-							<div class="hover">
-								<a class="fancybox" rel="gallery1" href="#portfolio_1">
-									<div class="item-content">
-										<h4>AVOD Usability Synthesis</h4>
-									</div>
-								</a>
-							</div>
-						</div>
-					</li>
-					<li class="brainstorm item illustration identity" tabindex="0">
-						<div class="image" >
-							<img src="images/brainstorm1.png"  alt="Brainstorming icon" />
-							<div class="hover">
-								<a class="fancybox" rel="gallery1" href="#portfolio_2">
-									<div class="item-content">
-										<h4>AVOD Brainstorming Workshop</h4>
-									</div>
-									</a>
-							</div>
-						</div>
-					</li>
-					<li class="prioritize item web dtp" tabindex="0">
-						<div class="image">
-							<img src="images/prioritize1.png"  alt="Prioritization icon" />
-							<div class="hover">
-								<a class="fancybox" rel="gallery1" href="#portfolio_3">
-									<div class="item-content">
-										<h4>AVOD Prioritization Session</h4>
-									</div>
-								</a>
-							</div>
-						</div>
-					</li>
-				</ul>
+				<div class="api-wires row">
+				  	<div class="col-md"><img class="apiwires" src="images/API Catalog.png"></div>
+				  	<div class="col-md"><img class="apiwires" src="images/API Documentation.png"></div>
+				  	<div class="col-md"><img class="apiwires" src="images/API Use Cases.png"></div>
+				</div>
 			</section>
 		</div>
 		<footer id="footer">

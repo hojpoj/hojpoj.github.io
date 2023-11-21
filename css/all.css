@@ -516,6 +516,32 @@ img.wiresmocks2 {
 	padding-top: 2.5em;
 }
 
+img.nonuserdev{
+	width: 200px;
+	margin: auto;
+	position: relative;
+	display: flex;
+	padding-top: 3em;
+}
+
+img.userresearchicon{
+	width: 200px;
+	margin: auto;
+	position: relative;
+	display: flex;
+	padding-top: 8em;
+}
+
+.api-wires {
+	margin: auto;
+	width: fit-content;
+	padding-top: 2.5em;
+}
+
+img.apiwires {
+	width: 300px;
+}
+
 .deliverable_align {
 	margin: auto !important;
 	width: 885px;
