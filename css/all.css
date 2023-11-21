@@ -491,7 +491,7 @@ p.project_snippet{
 }
 .design_process ul li:first-child{margin: 0;}
 
-img.nonusergraphic {
+img.nonusergraphic, img.showtrackingwires1 {
 	width: 500px;
 	margin-left: 75px;
 	margin-top: 40px;
@@ -506,6 +506,14 @@ img.userresearch, img.searchwires {
 img.searchcomp {
 	width: 500px;
 	margin-left: 75px;
+}
+
+img.wiresmocks2 {
+	width: 650px;
+	margin: auto;
+	position: relative;
+	display: flex;
+	padding-top: 2.5em;
 }
 
 .deliverable_align {

@@ -118,86 +118,31 @@
 				<div class="overview row">
 				  <div class="project_overview_deliverables col-md">
 				  	<h3 class="project_overview">Requirements Gathering</h3>
-				  	<p>The beginning of both of these project started as a pretty ambiguous "hey, let's fix FAST/AVOD" from my product managers so the first step was to sit down and figure out the who, what, when, where, and why. I set up a meeting with my key stakeholders to figure out the problem(s) they were wanting to solve, metrics they wanted to target, any target users they had in mind, and a timeline.</p>
-				  	<ul>
-					  	<li>For FAST: My product managers wanted to tackle two main problems: the lack of consistency of the FAST experience across all supported platforms (the platforms of focus ended up being iOS, Android, watch.plex (web), app.plex (web), Fire TV, Roku, and LG/Lightning. The process was going to be start with identifying what's actually happening in FAST, if it aligns with best practices in the industry, figure out how to bring it to a consistent state across platforms that users would be happy with, and then start figuring out areas of improvement for future iterations of FAST.</li>
-					  	<li>For AVOD: The same problems as above were identified, but for a user group, we focused a lot less on PMS users and more on general users in order to improve the experience to focus more on retention and registration.</li>
-					</ul>
+				  	<p>Show tracking was a product-proposed project. The team wanted a way for users to easily track their watching progress of TV show and movies across all streaming services (including Plex titles) within Plex. This project was added functionality to a new feature on Plex called Discover. Discover is a feature where a user is able to select all the streaming services they have available to themselves and, once set, gives them the ability to browse titles across all of these services as well as Plex's curated selection. Discover is a feature majorly popular among general, non-PMS users and this ended up being our target audience for this project.</p>
+				  	<p>Though this feature would eventually be available on all platforms (mobile, web, TV), the main platform focused at the start was web. Working with product off an original concept flow they created, we knew we wanted to focus on the Watchlist feature and figuring out how tracking would work when a user clicks on Watchlist from the show/season/episode levels of TV shows as well as on a movie title.</p>
 				  </div>
 				</div>
 				<div class="horizontal-divider"></div>
 				<div class="overview row">
 				  <div class="project_overview_deliverables col-md">
-				  	<h3 class="project_overview">Non-User Research</h3>
-				  	<p>After the initial meeting with stakeholders, I went onto non-user/market research. For this round of research, I focused on trying to find any existing documentation/research/wireframes/mockups that may be able to help target inconsistencies, walking through the application on target platforms to understand and map out flows/inconsistencies, and look at competitors to understand what best practices appear to be across streaming services. This resulted in the following:</p>
-				  	<ul>
-				  		<li>Metadata Analysis and Usability Analysis: To start tackling the consistency issues across platforms, I started off by conducting a metadata analysis for FAST/AVOD. The metadata analysis consisted of walking through each major page within the FAST/AVOD flows, wireframing them out completely (paying extra attention to the formatting and display of metadata), and then walking through to see the best way to standardize formatting across platforms. I also was able to use these wireframes to map out feature/usability inconsistencies and recommendations around them. Part of the flows for TV FAST apps is shown to the right.</li>
-				  		<li>Competitive Analysis: While looking through competitors, I conducted a few analyses centered around the following: metadata formatting across FAST/AVOD, general structure/flow of FAST/AVOD, and general page organization. For these analyses, I maintained a list of 11 competitors (5 direct, 6 indirect) for AVOD and a list of between 10-15 competitors for FAST (this varied based on users and functionality being considered). Direct competitors were streaming services that were free ad-supported services, indirect competitors were paid streaming services.</li>
-				  	</ul>
+				  	<h3 class="project_overview">Wireframing/Blueprinting and High Fidelity Prototyping Part 1</h3>
+				  	<p>After the initial meeting with stakeholders, I worked collaboratively with product as I thought through different iterations of the concept flow they created. One of the challenges that needed to be considered when working on these flows was the expected behavior between deep-linking and non-deep-linking clients. Depending on the devices and service, some services (such as Firestick/Amazon) did not allow for deep-linking which would change the flow slightly for users on that platform in order to allow the Plex app to be published on that platform.</p>
+				  	<p>Another major challenge was just how much granularity to include as well as the numerous flows for each episode. At the time, Plex could only support going to the show level and, based on previous user research, users expressed interest in being able to track season and episode-level content. This challenge was also intertwined with the amount of flows. Movies had the simplest flows as a user has either watched a movie or they hadn't watched a movie. TV shows were different; to start, a user could have only watched one season of a multi-season show or a few episodes from different seasons, etc. It would depend on if a TV show was sequential or if it was more of an anthology-type show were each episode was its own complete story (or something inbetween those two). To compensate for this, we had flows for a user who has watched all the seasons/episodes of a show, a user who has watched none of a show, and a user who has watched some of the show. Because of the complexity, this added to the debate of what level of granularity to get down into for tracking purposes.</p>
+				  	<p>Eventually, we were able to get to a happy point with watchlisting and the flow was passed off to the lead UI designer for high fidelity mockups.</p>
 				  </div>
 				  <div class="project_overview_deliverables col-md">
-				  	<img class="nonusergraphic" src='images/nonusergraphic.png'>
-				  </div>
-				</div>
-				<div class="horizontal-divider"></div>
-				<div class="overview row">
-					<div class="project_overview_deliverables col-md">
-						<img class="userresearch" src='images/userresearch.png'>
-					</div>
-				  <div class="project_overview_deliverables col-md">
-				  	<h3 class="project_overview">User Research</h3>
-				  	<p>With the information collected from the non-user research, I wrote up a test plan for usability research across FAST/AVOD platforms.</p>
-				  	<ul>
-					  	<li>For the FAST study: The target users were initially focused around non-PMS (personal media server) users that watched at least 1-2 hours of live TV on a weekly basis, not specifically on Plex, but in general. Mobile, web, and TV platforms were targetted for this study. Users were asked to walk through the way they would typically use FAST, describing anything they liked/disliked/etc and then were asked questions around their experience, their watching habits, etc at the end to understand user behavior and content consumption. The study initially had over 80 participants, with about 40-50 usable studies used for research analysis as the study was unmoderated through UserTesting.com.</li>
-					  	<li>For the AVOD study: The target users were focused around non-PMS (personal media server) users that watched at least 1-2 hours of live TV on a weekly basis, not specifically on Plex, but in general. Mobile, web, and TV platforms were targetted for this study. Users were asked to walk through the way they would typically use AVOD, describing anything they liked/disliked/etc and then were asked questions around their experience, their watching habits, etc at the end to understand user behavior and content consumption. The study initially had over 110 participants, with a little over 60 usable studies used for research analysis as the study was unmoderated through UserTesting.com.</li>
-					</ul>
+				  	<img class="showtrackingwires1" src='images/wires1.png'>
 				  </div>
 				</div>
 				<div class="horizontal-divider"></div>
 				<div class="overview row">
 				  <div class="project_overview_deliverables col-md">
-				  	<h3 class="project_overview">Recommendations and Brainstorming</h3>
-				  	<p>With all the research conducted, I put together an synthesis of my findings, also including in a JTBD persona for each study as requested by my product team. After presenting the synthesis to my product team as well as various other stakeholders, I was able to put together a brainstorming workshop to use with my stakeholders to generate new feature ideas for FAST and AVOD. From the brainstorming workshops, I took the most popular ideas and put them into a prioritization matrix and eventually a UX strategy/research/design backlog for future iterations of each flow. Below are snippets from the AVOD synthesis, brainstorming workshop, and prioritization matrix.</p>
+				  	<h3 class="project_overview">Wireframing/Blueprinting and High Fidelity Prototyping Part 2</h3>
+				  	<p>As the high fidelity mockups were reviewed by the team, product had decided to also include Mark as Watched to the flows as well as Watchlist and Mark as Watched would have tied together functionality. As we got further in the Mark as Watched wireframes and started to test and prototype with users and internal employees, it did become obvious that the Mark as Watched flow did get confusing and it was eventually benched for the time being to focused just on Watchlist as well as Continue Watching improvements, which were a result from initial Watchlist wires and were very intertwined as well</p>
+				  	<p>Wires and high fidelity mockups were eventually created for the entirety of flows for mobile, web, and TV, with usability testing being conducted in between to confirm flows and terminology with users along the way. For a full feature release for internal employees, Show Tracking was available on mobile for testing purpose.</p>
 				  </div>
 				</div>
-				<ul id="container" class="deliverable_align item-list">
-					<li class="research item web key">
-						<div class="image" tabindex="0">
-							<img src="images/research1.png"  alt="Research icon" />
-							<div class="hover">
-								<a class="fancybox" rel="gallery1" href="#portfolio_1">
-									<div class="item-content">
-										<h4>AVOD Usability Synthesis</h4>
-									</div>
-								</a>
-							</div>
-						</div>
-					</li>
-					<li class="brainstorm item illustration identity" tabindex="0">
-						<div class="image" >
-							<img src="images/brainstorm1.png"  alt="Brainstorming icon" />
-							<div class="hover">
-								<a class="fancybox" rel="gallery1" href="#portfolio_2">
-									<div class="item-content">
-										<h4>AVOD Brainstorming Workshop</h4>
-									</div>
-									</a>
-							</div>
-						</div>
-					</li>
-					<li class="prioritize item web dtp" tabindex="0">
-						<div class="image">
-							<img src="images/prioritize1.png"  alt="Prioritization icon" />
-							<div class="hover">
-								<a class="fancybox" rel="gallery1" href="#portfolio_3">
-									<div class="item-content">
-										<h4>AVOD Prioritization Session</h4>
-									</div>
-								</a>
-							</div>
-						</div>
-					</li>
-				</ul>
+				<div><img class="wiresmocks2" src="images/wiremock2.png"></div>
 			</section>
 		</div>
 		<footer id="footer">
