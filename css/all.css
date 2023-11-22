@@ -360,7 +360,7 @@ h2.contact_me, h2.rfs, h2.featured, h2.project_header, h2.process_header, h2.por
 	text-align: center;
 	padding: 15px 0 0 0;
 }
-.design_process ul li .process_step_bank span{
+.design_process ul li .process_step_bank span, .design_process ul li .process_step_cdph span{
 	font-family: 'kiona';
 	color: #fff;
 	font-size: 18px;
@@ -490,7 +490,7 @@ p.project_snippet{
 	margin: 0 0 0 30px;
 	background: url(../images/bg_ul_dark.gif) repeat-x 0 76px;
 }
-.design_process ul li .process_step, .design_process ul li .process_step_bank{
+.design_process ul li .process_step, .design_process ul li .process_step_bank, .design_process ul li .process_step_cdph{
 	background: url(../images/bg_timeline_c_light.png) no-repeat 50% 0;
 	height: 86px;
 	width: 180px;
@@ -501,11 +501,25 @@ p.project_snippet{
 
 img.nonusergraphic, img.showtrackingwires1 {
 	width: 500px;
-	margin-left: 75px;
-	margin-top: 40px;
+	margin-left: 3.5em;
+	margin-top: 2em;
 }
 
-img.userresearch, img.searchwires {
+img.cdphwires {
+	width: 500px;
+	margin-left: 0.5em;
+	margin-top: 0.5em;
+}
+
+img.cdphuserresearch {
+	width: 200px;
+	margin: auto;
+	position: relative;
+	display: flex;
+	margin-top: 5em;
+}
+
+img.userresearch, img.searchwires{
 	width: 500px;
 	margin-right: 0.5em;
 	margin-top: 4em;
