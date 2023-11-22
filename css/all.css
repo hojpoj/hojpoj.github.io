@@ -319,6 +319,30 @@ h2.contact_me, h2.rfs, h2.featured, h2.project_header, h2.process_header, h2.por
 	overflow: hidden;
 	margin-left:5em;
 }
+.book_process_holder{
+	background: url(../images/bg_timeline_l_dark.png) no-repeat 0 70px;
+	position: relative;
+	padding: 0 0 0 100px;
+	overflow: hidden;
+	margin-left:5em;
+}
+.book_process{
+	background: url(../images/bg_timeline_r_dark.png) no-repeat 90% 70px;
+	position: relative;
+	padding: 0 100px 0 0;
+	overflow: hidden;
+}
+.book_process ul{
+	position: relative;
+	background: url(../images/bg_ul_dark.gif) repeat-x 0 76px;
+	overflow: hidden;
+}
+.book_process ul li{
+	float:left;
+	width: 170px;
+	margin: 0 0 0 30px;
+	background: url(../images/bg_ul_dark.gif) repeat-x 0 76px;
+}
 .box_timeline{
 	background: url(../images/bg_timeline_r.png) no-repeat 100% 70px;
 	position: relative;
@@ -344,6 +368,7 @@ h2.contact_me, h2.rfs, h2.featured, h2.project_header, h2.process_header, h2.por
 }
 .box_timeline ul li:first-child{margin: 0;}
 .process_timeline ul li:first-child{margin: 0;}
+.book_process ul li:first-child{margin: 0;}
 .box_timeline ul li .company, .process_timeline ul li .company{
 	background: url(../images/bg_timeline_c.png) no-repeat 50% 0;
 	height: 86px;
@@ -351,7 +376,7 @@ h2.contact_me, h2.rfs, h2.featured, h2.project_header, h2.process_header, h2.por
 	margin: 0 auto 12px;
 	overflow: hidden;
 }
-.box_timeline ul li .company span, .design_process ul li .process_step span, .process_timeline ul li .company span{
+.box_timeline ul li .company span, .design_process ul li .process_step span, .process_timeline ul li .company span, .book_process ul li .book_step span{
 	font-family: 'kiona';
 	color: #fff;
 	font-size: 18px;
@@ -368,7 +393,7 @@ h2.contact_me, h2.rfs, h2.featured, h2.project_header, h2.process_header, h2.por
 	display: block;
 	text-align: center;
 }
-.box_timeline h3, .design_process h3, .process_timeline h3{
+.box_timeline h3, .design_process h3, .process_timeline h3, .book_process h3{
 	font-family: 'ttchocobold';
 	color: #9A90FE;
 	font-size: 18px;
@@ -376,7 +401,7 @@ h2.contact_me, h2.rfs, h2.featured, h2.project_header, h2.process_header, h2.por
 	text-align: center;
 	margin: 0 0 10px;
 }
-.box_timeline p, .process_timeline p{
+.box_timeline p, .process_timeline p, .book_process p{
 	font-family: 'ttchocoregular';
 	color: #a4a7ac;
 	font-size: 16px;
@@ -490,7 +515,7 @@ p.project_snippet{
 	margin: 0 0 0 30px;
 	background: url(../images/bg_ul_dark.gif) repeat-x 0 76px;
 }
-.design_process ul li .process_step, .design_process ul li .process_step_bank, .design_process ul li .process_step_cdph{
+.design_process ul li .process_step, .design_process ul li .process_step_bank, .design_process ul li .process_step_cdph, .book_process ul li .book_step{
 	background: url(../images/bg_timeline_c_light.png) no-repeat 50% 0;
 	height: 86px;
 	width: 180px;
@@ -742,8 +767,8 @@ h3.principle_overview{
 	font-weight: normal;
 }
 .sub_nav a:hover,.sub_nav a.active{
-	color: #4801FF;
-	border-bottom: 4px solid #4801FF;
+	color: #7367FE;
+	border-bottom: 4px solid #7367FE;
 	text-decoration: none;
 	-webkit-transition: all 0.5s ease-in-out;
 -moz-transition: all 0.5s ease-in-out;
@@ -763,8 +788,8 @@ transition: all 0.5s ease-in-out;
 	font-weight: normal;
 }
 .sub_nav li:hover,.sub_nav .active {
-	color: #4801FF;
-	border-bottom: 4px solid #4801FF;
+	color: #7367FE;
+	border-bottom: 4px solid #7367FE;
 	text-decoration: none;
 	cursor: pointer;
 	-webkit-transition: all 0.5s ease-in-out;
