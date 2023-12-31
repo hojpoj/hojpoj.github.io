@@ -1293,7 +1293,7 @@ section .container {
 .timeline .timeline-container .timeline-icon i {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 55%;
   transform: translate(-50%, -50%);
 }
 .timeline .timeline-container .timeline-icon img {
