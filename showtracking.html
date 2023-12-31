@@ -1,191 +1,79 @@
 <!DOCTYPE html>
-<!--[if lte IE 8]> <html class="oldie" lang="en"> <![endif]-->
-<!--[if IE 9]> <html class="ie9" lang="en"> <![endif]-->
-<!--[if gt IE 9]><!--> <html lang="en"> <!--<![endif]-->
-<head>
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-KX5PFGG5EB"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+<html lang="en">
 
-	  gtag('config', 'G-KX5PFGG5EB');
-	</script>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="format-detection" content="telephone=no">
-	<title>Alexa Jo Hojczyk</title>
-<!-- add fancybox.css -->
-	<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/all.css" />
-	<link rel="stylesheet" href="css/screen.css" />
-	<!--[if lt IE 9]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Portfolio Details</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
 </head>
+
 <body>
-	<div id="wrapper" class="portfolio">
-		<div class="wrapper-holder">
-			<header id="header">
-				<a href="#main" class="skip">Skip to main content</a>
-				<a class="menu_trigger" href="#">menu</a>
-					<nav id="nav">
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="myprocess.html">My Process</a></li>
-							<li><a class="active" href="portfolio.html">portfolio</a></li>
-							<li><a href="aboutme.html">About Me</a></li>
-						</ul>
-					</nav>
-			</header>
-		</div>
-		<div class="wrapper-holder grey" role="main" aria-label="Project Overview">
-			<section id="main">
-				<a class="back_to_projects" href="javascript:window.history.back();">< Back To Projects</a>
-				<h2 class="project_header">Plex - Show Tracking</h2>
-				<div class="overview row">
-				  <div class="col-md vertical-divider">
-				  	<h3 class="project_overview">Project Overview</h3>
-				  	<p>Focused on the Discover product team at Plex, I led a majority of the UX strategy and research efforts over the past couple years. One of the major projects for this team was centered around Plex’s Discover feature, which allows a user to search and browse across all their streaming services in one place. During this project, I mainly focused on the UX strategy behind show tracking, aka allowing the user to track their movie and TV show progress for all their content across all streaming services within Plex. A majority of the project focused around low fidelity wireframes across platforms to fine tune an intuitive process. The feature is currently in beta testing.</p>
-				  </div>
-				  <div class="col-sm-2 vertical-divider">
-				  	<h3 class="project_overview">Target Users</h3>
-				  	<p>General, non-PMS users that use multiple streaming services including Plex (PMS users were also considered, they just weren't the target audience)</p>
-				  </div>
-				  <div class="project_overview_deliverables col-md">
-				  	<h3 class="project_overview">Deliverables Created</h3>
-				  	<ul>
-				  		<li>Low fidelity wireframes created in Figma/Figjam</li>
-				  		<li>User research plans, synthesis reports, and recommendations</li>
-				  		<li>Usability testing around show tracking concepts to confirm placement, terminology, and flows</li>
-				  		<li>UX analysis of current Discover flows within Plex</li>
-				  		<li>Accessibility recommendations/considerations</li>
-				  	</ul>
-				  </div>
-				</div>
-				<div class="horizontal-divider"></div>
-				<div class="overview row">
-				  <div class="project_overview_deliverables col-xl">
-				  	<h3 class="project_overview">Main Challenges</h3>
-				  	<ul>
-				  		<li> It was important to not only track flows, but also populate them into Plex’s Continue Watching hub and Watchlist feature for users which meant figuring out a way to popularize those features with users</li>
-				  		<li>Figuring out the granularity of how deep we wanted to go into show tracking (i.e. at the show, season, or episode level for TV shows) led to multiple discussions on different approaches to show tracking</li>
-				  		<li>With the possibility of going down to the episode level for tracking, TV platforms were an interesting challenge as on TV platforms, Plex shows season and episode levels together, not individually</li>
-				  	</ul>
-				  </div>
-				</div>
-			</section>
-		</div>
-		<div class="wrapper-holder light-grey" role="region" aria-label="Design Process">
-			<section id="main2">
-				<h2 class="process_header">Design Process</h2>
-				<p class="project_snippet">Below is a snapshot of each step of the process conducted in order to complete this project.</p>
-				<div class="design_process_holder">
-					<div class="design_process">
-						<ul>
-							<li>
-								<div class="process_step">
-									<span>Requirements Gathering</span>
-								</div>
-								<p>Meeting with stakeholders to understand problem and business/product needs</p>
-							</li>
-							<li>
-								<div class="process_step">
-									<span>Wireframing /Blueprinting</span>
-								</div>
-								<p>Iterative wireframing to establish flows and functionality across platforms</p>
-							</li>
-							<li>
-								<div class="process_step">
-									<span>High Fidelity Prototyping</span>
-								</div>
-								<p>Passed off wires to designer, provided design feedback and conducted usability tests with prototypes</p>
-							</li>
-							<li>
-								<div class="process_step">
-									<span>Wireframing /Blueprinting P2</span>
-								</div>
-								<p>More iterative wireframing to establish flows and functionality across platforms</p>
-							</li>
-							<li>
-								<div class="process_step">
-									<span>High Fidelity Prototyping P2</span>
-								</div>
-								<p>Passed off wires to designer, provided design feedback and conducted usability tests with prototypes</p>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</section>
-		</div>
-		<div class="wrapper-holder dark-grey" role="region" aria-label="The Full Process">
-			<section id="main3">
-				<h2 class="project_header">The Full Process</h2>
-				<div class="overview row">
-				  <div class="project_overview_deliverables col-md">
-				  	<h3 class="project_overview">Requirements Gathering</h3>
-				  	<p>Show tracking was a product-proposed project. The team wanted a way for users to easily track their watching progress of TV show and movies across all streaming services (including Plex titles) within Plex. This project was added functionality to a new feature on Plex called Discover. Discover is a feature where a user is able to select all the streaming services they have available to themselves and, once set, gives them the ability to browse titles across all of these services as well as Plex's curated selection. Discover is a feature majorly popular among general, non-PMS users and this ended up being our target audience for this project.</p>
-				  	<p>Though this feature would eventually be available on all platforms (mobile, web, TV), the main platform focused at the start was web. Working with product off an original concept flow they created, we knew we wanted to focus on the Watchlist feature and figuring out how tracking would work when a user clicks on Watchlist from the show/season/episode levels of TV shows as well as on a movie title.</p>
-				  </div>
-				</div>
-				<div class="horizontal-divider"></div>
-				<div class="overview row">
-				  <div class="project_overview_deliverables col-md">
-				  	<h3 class="project_overview">Wireframing/Blueprinting and High Fidelity Prototyping Part 1</h3>
-				  	<p>After the initial meeting with stakeholders, I worked collaboratively with product as I thought through different iterations of the concept flow they created. One of the challenges that needed to be considered when working on these flows was the expected behavior between deep-linking and non-deep-linking clients. Depending on the devices and service, some services (such as Firestick/Amazon) did not allow for deep-linking which would change the flow slightly for users on that platform in order to allow the Plex app to be published on that platform.</p>
-				  	<p>Another major challenge was just how much granularity to include as well as the numerous flows for each episode. At the time, Plex could only support going to the show level and, based on previous user research, users expressed interest in being able to track season and episode-level content. This challenge was also intertwined with the amount of flows. Movies had the simplest flows as a user has either watched a movie or they hadn't watched a movie. TV shows were different; to start, a user could have only watched one season of a multi-season show or a few episodes from different seasons, etc. It would depend on if a TV show was sequential or if it was more of an anthology-type show were each episode was its own complete story (or something inbetween those two). To compensate for this, we had flows for a user who has watched all the seasons/episodes of a show, a user who has watched none of a show, and a user who has watched some of the show. Because of the complexity, this added to the debate of what level of granularity to get down into for tracking purposes.</p>
-				  	<p>Eventually, we were able to get to a happy point with watchlisting and the flow was passed off to the lead UI designer for high fidelity mockups.</p>
-				  </div>
-				  <div class="project_overview_deliverables col-md">
-				  	<img class="showtrackingwires1" src='images/wires1.png'>
-				  </div>
-				</div>
-				<div class="horizontal-divider"></div>
-				<div class="overview row">
-				  <div class="project_overview_deliverables col-md">
-				  	<h3 class="project_overview">Wireframing/Blueprinting and High Fidelity Prototyping Part 2</h3>
-				  	<p>As the high fidelity mockups were reviewed by the team, product had decided to also include Mark as Watched to the flows as well as Watchlist and Mark as Watched would have tied together functionality. As we got further in the Mark as Watched wireframes and started to test and prototype with users and internal employees, it did become obvious that the Mark as Watched flow did get confusing and it was eventually benched for the time being to focused just on Watchlist as well as Continue Watching improvements, which were a result from initial Watchlist wires and were very intertwined as well</p>
-				  	<p>Wires and high fidelity mockups were eventually created for the entirety of flows for mobile, web, and TV, with usability testing being conducted in between to confirm flows and terminology with users along the way. For a full feature release for internal employees, Show Tracking was available on mobile for testing purpose.</p>
-				  </div>
-				</div>
-				<div><img class="wiresmocks2" src="images/wiremock2.png"></div>
-			</section>
-		</div>
-		<footer id="footer">
-			<div class="footer-content">
-				<ul class="social">
-					<li class="email"><a href="mailto:hojczyka@gmail.com">Email</a></li>
-					<li class="linkedin"><a href="https://www.linkedin.com/in/alexa-hojczyk-07788298/">LinkedIn</a></li>
-					<li class="resume"><a href="documents/AlexaHojczykResumeOct2023.pdf" download="alexa_hojczyk_resume" target="_blank" aria-label="Resume opens in a new window">Resume</a></li>
-				</ul>
-				<p class="copy">Copyright 2023 Alexa Hojczyk. All rights reserved.</p>
-			</div>
-		</footer>	
-	</div>
-	<div style="display:none;">
-		<div id="portfolio_1" class="popup_portfolio">
-			<object data="documents/10.2022_AVOD_Summary.pdf" type="application/pdf" width="1000px" height="500px">
-			</object>
-		</div>
-		<div id="portfolio_2" class="popup_portfolio">
-			<h3>AVOD Brainstorming Workshop</h3>
-			<p>The FAST and AVOD brainstorming workshops were formatted similarly with affinity mapping, creative matrices, and voting on ideas. Specifically for the AVOD workshop, participants started with a warm-up activity to step into the shoes of the user by recalling as many titles from the main pages of Plex as possible. We then moved onto affinity mapping, where participants were sorted through existing challenges they saw with AVOD (through personal experience and user research), dividing them into groups and then, as a group, coming up with How Might We statements based off of them. From there, we used those HMW statements for our creative matrix and then voted on items via Monopoly money. Shown below are the affinity mapping and creative matrix activities.</p>
-			<img src="documents/AVOD Brainstorming Workshop.png"  alt="AVOD Brainstorming Workshop session"/>
-		</div>
-		<div id="portfolio_3" class="popup_portfolio">
-			<h3>AVOD Prioritization Session</h3>
-			<p>Items from the AVOD workshop were pulled into the matrix for prioritization. Following the initial session, I broke out the items into different sections of where research was needed, what we needed more info on in general, what were mainly dev-focused items, what were items were already got started on from a design perspective, and miscellaous, sorting each column by priority order.</p>
-			<img src="documents/AVODBrainstormingPrioritization.png"  alt="AVOD Brainstorming Prioritization session"/>
-		</div>
-	</div>
-	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script src="js/isotope.pkgd.min.js"></script>
-	<script src="js/cells-by-row.js"></script>
-	<script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+  <main id="main">
+
+    <!-- ======= Portfolio Details ======= -->
+    <div id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+          <div class="col-lg-6">
+            <h2 class="portfolio-title">Show Tracking Overview</h2>
+          </div>
+
+        <div class="row">
+          <div class="col-lg-8 portfolio-info">
+            <ul>
+              <li><strong>Company</strong>: Plex</li>
+              <li><strong>Platforms Covered</strong>: TV, iOS, Android, Responsive Web</li>
+              <li><strong>Target Users</strong>: General, non-PMS users that use multiple streaming services including Plex (PMS users were also considered, they just weren't the target audience)</li>
+              <li><strong>Deliverables</strong>: Low fidelity wireframes created in Figma/Figjam, User research plans, synthesis reports, and recommendations, Usability testing around show tracking concepts to confirm placement, terminology, and flows, UX analysis of current Discover flows within Plex, Accessibility recommendations/considerations</li>
+            </ul>
+
+            <p>
+              Focused on the Discover product team at Plex, I led a majority of the UX strategy and research efforts over the past couple years. One of the major projects for this team was centered around Plex’s Discover feature, which allows a user to search and browse across all their streaming services in one place. During this project, I mainly focused on the UX strategy behind show tracking, aka allowing the user to track their movie and TV show progress for all their content across all streaming services within Plex. A majority of the project focused around low fidelity wireframes across platforms to fine tune an intuitive process. The feature is currently in beta testing.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </div><!-- End Portfolio Details -->
+
+  </main><!-- End #main -->
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
