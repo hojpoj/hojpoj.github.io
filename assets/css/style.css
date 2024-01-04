@@ -1413,6 +1413,12 @@ section .container {
   position: relative;
   margin-left: 12rem;
 }
+@media (max-width: 768px) {
+  .img-center {
+    margin-left: 4rem;
+  }
+}
+
 .research-deck {
   margin-left: 13rem;
 }
