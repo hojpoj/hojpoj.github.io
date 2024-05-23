@@ -1196,7 +1196,7 @@ section .container {
 .projectdetails-overview .content ul li {
   margin-bottom: 20px;
   display: flex;
-  align-items: center;
+  /*align-items: center;*/
 }
 
 .projectdetails-overview .content ul strong {
@@ -1208,6 +1208,7 @@ section .container {
   margin-right: 5px;
   color: #675CFF;
   line-height: 0;
+  padding-top: .2rem;
 }
 
 .projectdetails-overview .content p:last-child {

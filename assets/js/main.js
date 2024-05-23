@@ -215,7 +215,84 @@
     }
   });
 
-    /**
+  /**
+   * Scrool with ofset on links with a class name .scrollto
+   */
+  on('click', '#stratusdesignsystem-section .back-link', function(e) {
+    let section = select(this.hash)
+    if (section) {
+      e.preventDefault()
+
+      let navbar = select('#stratusdesignsystem-section')
+      let header = select('#stratusdesignsystem')
+      let sections = select('section', true)
+      let navlinks = select('#stratusdesignsystem-section .back-link', true)
+
+      navlinks.forEach((item) => {
+        item.classList.remove('active')
+      })
+
+      this.classList.add('active')
+
+      if (this.hash == '#stratusdesignsystem') {
+        header.classList.remove('header-top')
+        sections.forEach((item) => {
+          item.classList.remove('section-show')
+        })
+        return;
+      }
+
+      if (!header.classList.contains('header-top')) {
+        header.classList.add('header-top')
+        setTimeout(function() {
+          sections.forEach((item) => {
+            item.classList.remove('section-show')
+          })
+          section.classList.add('section-show')
+
+        }, 350);
+      } else {
+        sections.forEach((item) => {
+          item.classList.remove('section-show')
+        })
+        section.classList.add('section-show')
+      }
+
+      scrollto(this.hash)
+    }
+  }, true)
+
+  /**
+   * Activate/show sections on load with hash links
+   */
+  window.addEventListener('load', () => {
+    if (window.location.hash) {
+      let initial_nav = select(window.location.hash)
+
+      if (initial_nav) {
+        let portfolio = select('#stratusdesignsystem')
+        let portlinks = select('#stratusdesignsystem-section .back-link', true)
+
+        header.classList.add('header-top')
+
+        portlinks.forEach((item) => {
+          if (item.getAttribute('href') == window.location.hash) {
+            item.classList.add('active')
+          } else {
+            item.classList.remove('active')
+          }
+        })
+
+        setTimeout(function() {
+          initial_nav.classList.add('section-show')
+        }, 350);
+
+        scrollto(window.location.hash)
+      }
+    }
+  });
+
+  /**
    * Scrool with ofset on links with a class name .scrollto
    */
   on('click', '#fastavod-section .back-link', function(e) {
