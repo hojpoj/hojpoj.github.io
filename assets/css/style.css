@@ -288,6 +288,7 @@ h6 {
 }
 
 .navbar a:hover:before,
+.navbar a:focus:before,
 .navbar li:hover>a:before,
 .navbar li:focus>a:before,
 .navbar .active:before {
