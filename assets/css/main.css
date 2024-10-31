@@ -357,6 +357,13 @@ h1 {
   }
 }
 
+/*@media (max-width: 1199px) {
+  .menubar-navigation > li > [role="menuitem"] {
+    display: flex !important;
+    flex-direction: column;
+  }
+}
+*/
 /* Mobile Navigation */
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
@@ -479,7 +486,8 @@ h1 {
   }
 
   .mobile-nav-active .navmenu>ul {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -1905,7 +1913,7 @@ top: 0;
 }
 
 .menubar-navigation > li > [role="menuitem"] {
-  display: inline-block;
+/*  display: inline-block;*/
   margin: 2px;
   padding: 4px;
   padding-bottom: 8px;
@@ -1924,7 +1932,7 @@ top: 0;
 
 .menubar-navigation [role="menu"] [role="menuitem"],
 .menubar-navigation [role="menu"] [role="separator"] {
-  display: block;
+  display: flex;
   padding: 10px;
   padding-left: 8px;
   background: var(--nav-dropdown-background-color);

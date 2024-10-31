@@ -442,14 +442,16 @@ class MenubarNavigation {
         popupMenu.style.right = rect.width - 4 + 'px';
         popupMenu.style.top = '0px';
         popupMenu.style.zIndex = 100;
-        popupMenu.style.width = '250px';
+        popupMenu.style.minWidth = '250px';
+        popupMenu.style.height = 'max-content';
       } else {
         popupMenu.style.display = 'block';
         popupMenu.style.position = 'absolute';
         popupMenu.style.right = '0px';
         popupMenu.style.top = rect.height + 8 + 'px';
         popupMenu.style.zIndex = 100;
-        popupMenu.style.width = '250px';
+        popupMenu.style.minWidth = '250px';
+        popupMenu.style.height = 'max-content';
       }
 
       menuitem.setAttribute('aria-expanded', 'true');
