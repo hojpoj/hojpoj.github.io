@@ -110,6 +110,27 @@ h1 {
   color: #adadad;
 }
 
+.skip {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip:focus {
+  position: absolute;
+  z-index: 1000;
+  width: auto;
+  height: auto;
+  margin-left: 100px;
+  left: -30px;
+  top: 10px;
+  font-size: 18px;
+  background-color: #fff;
+  padding: 5px;
+}
+
 /* PHP Email Form Messages
 ------------------------------*/
 .php-email-form .error-message {
