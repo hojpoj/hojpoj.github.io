@@ -1663,6 +1663,18 @@ section,
   border-radius: 5px;
 }
 
+.sds-doc {
+  max-width: 45%;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.column .sds-process-doc {
+  float:left;
+}
+
 /*--------------------------------------------------------------
 # Example Images
 --------------------------------------------------------------*/
